@@ -30,9 +30,8 @@ security:
     firewalls:
 
         main_register:
-            pattern: ^/register|^^resetting|^^login$
+            pattern: ^/register|^/resetting|^/login$
             anonymous: true
-
 
 
         # disables authentication for assets and the profiler, adapt it according to your needs

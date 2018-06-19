@@ -90,8 +90,8 @@ class DefaultController extends Controller
     public function viewAction(Advert $advert) {
 
         $em = $this->getDoctrine()->getManager();
-
         //$advert = $em->getRepository('DIPlatformBundle:Advert')->find($id);
+
         $list_applications = $em->getRepository('DIPlatformBundle:Application')->findByAdvert($advert);
 
         //$list_adverts = $em->getRepository('DIPlatformBundle:Advert')->getAdvertWithApplications($id);
